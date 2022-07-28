@@ -1,0 +1,3 @@
+protected abstract int HelloWorld {
+	
+}
