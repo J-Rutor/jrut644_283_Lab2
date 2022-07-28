@@ -1,3 +1,3 @@
-protected abstract int HelloWorld {
+public void HelloWorld {
 	
 }
