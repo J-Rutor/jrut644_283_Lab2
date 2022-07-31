@@ -125,9 +125,7 @@ public class TestStatsMean {
 			assertEquals(0, stats.getMean());
 			fail("Should have failed: empty list");
 		} catch (Exception e) {
-			// Nothing here - just ignore the fact that the exception
-			// occurred (since that's what's supposed to happen in
-			// this case).
+			// nothing
 		}
 	}
 
