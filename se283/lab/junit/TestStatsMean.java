@@ -120,8 +120,15 @@ public class TestStatsMean {
 	 */
 	@Test
 	public void testEmptyInputBroken() {
-		Stats stats = new Stats(new int[] {}); // Expected to throw exception
-		assertEquals(0, stats.getMean()); // Will throw exception
+		Stats stats = new Stats(new int[] {});
+		try {
+			assertEquals(0, stats.getMean());
+			fail("Should have failed: empty list");
+		} catch (Exception e) {
+			// Nothing here - just ignore the fact that the exception
+			// occurred (since that's what's supposed to happen in
+			// this case).
+		}
 	}
 
 	/**
